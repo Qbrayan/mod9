@@ -1,7 +1,7 @@
 (function () {
 'use strict';
 
-angular.module('MenuApp')
+angular.module('Data')
 .controller('MenuListController', MenuListController);
 
 // Version with resolving to 1 item based on $stateParams in route config

@@ -1,9 +1,17 @@
-<ul>
-  <li ng-repeat="item in $ctrl.dishes">
-    <div>Item short_name: {{ item.short_name }}</div>
-    <div>Item name: {{ item.name }}</div>
-    <div>Item description: {{ item.description }}</div>
-    <div>Item small price: {{ item.price_small }}</div>
-    <div>Item large price: {{ item.price_large }}</div>
-  </li>
-</ul>
+
+<table width="100%" class="table">
+  <tr>
+    <th>Name</th>
+    <th>Short Name</th>
+    <th>Description</th>
+    <th>Small price</th>
+    <th>large price</th>
+  </tr>
+  <tr ng-repeat="item in $ctrl.dishes">
+    <td>{{item.name}}</td>
+    <td>{{item.short_name}}</td>
+    <td>{{item.description}}</td>
+    <td>{{ item.price_small }}</td>
+    <td>{{ item.price_large }}</td>
+  </tr>
+</table>
